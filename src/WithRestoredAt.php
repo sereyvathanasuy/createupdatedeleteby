@@ -1,6 +1,7 @@
 <?php
 
 namespace Thana\CreateUpdateDeleteBy;
+
 trait WithRestoredAt
 {
     /**
@@ -11,7 +12,7 @@ trait WithRestoredAt
     public static function bootWithRestoredAt(): void
     {
         static::restoring(static function ($model) {
-            $model->restored_at = auth()->id();
+            $model->restored_at = now();
         });
     }
 }

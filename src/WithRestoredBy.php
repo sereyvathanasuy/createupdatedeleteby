@@ -1,6 +1,7 @@
 <?php
 
 namespace Thana\CreateUpdateDeleteBy;
+
 trait WithRestoredBy
 {
     /**

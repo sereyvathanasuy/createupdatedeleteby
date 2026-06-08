@@ -8,6 +8,11 @@
       "Thana\\CreateUpdateDeleteBy\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Thana\\CreateUpdateDeleteBy\\Tests\\": "tests/"
+    }
+  },
   "authors": [
     {
       "name": "Suy Sereyvathana",
@@ -15,9 +20,9 @@
     }
   ],
   "require": {
-    "php": "^8.1",
-    "illuminate/support": "^10.0|^11.0|^12.0",
-    "illuminate/database": "^10.0|^11.0|^12.0"
+    "php": "^8.3",
+    "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+    "illuminate/database": "^10.0|^11.0|^12.0|^13.0"
   },
   "extra": {
     "laravel": {
@@ -27,5 +32,8 @@
     }
   },
   "minimum-stability": "stable",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "require-dev": {
+    "orchestra/testbench": "^11.0"
+  }
 }
